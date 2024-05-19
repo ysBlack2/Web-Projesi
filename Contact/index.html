@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB PROJESI</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="StyleSheet2.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <div id="main-word">
+        <h1>Contact Us</h1>
+    </div>
+    <div id="d1" class="container">
+        <a href="C:\Users\Black\Desktop\Web Projesi\Main\index.html">
+            <input id="b1" type="button" value="Go Back" />
+        </a>
+    </div>
+    <br />
+
+
+    <div id="d2" class="container">
+        <form action="http://localhost/contact_info/contact.php" method="post" name="form">
+            <fieldset id="f1">
+                <div class="ad">
+                    <label for="fname"><strong>First Name:</strong> </label>
+                    <br />
+                    <input type="text" name="pfname" id="fname" placeholder="Your First Name" />
+                    <br />
+                    <label for="lname"><strong>Last Name:</strong></label>
+                    <br />
+                    <input type="text" name="plname" id="lname" placeholder="Your Last Name" />
+                </div>
+                <div class="gen">
+                    <label><strong>Your Gender:</strong></label>
+                    <br />
+                    <input type="radio" name="gender" value="male" id="male" />
+                    <label id="g" name="male" for="male">Male</label>
+                    <br />
+                    <input type="radio" name="gender" value="female" id="female" />
+                    <label id="g" name="female" for="female">Female</label>
+                </div>
+                <div class="contact">
+                    <label for="phone"><strong>Your Phone:</strong></label>
+                    <br />
+                    <input type="text" name="pphone" placeholder="Example: 5** *** ** **" id="phone" />
+                    <br />
+                    <label for="email"><strong>Your Email:</strong></label>
+                    <br />
+                    <input type="email" name="pemail" placeholder="Example: email@gmail.com" id="email" />
+                </div>
+                <div class="education">
+                    <label for="city"><strong>Your Education Level</strong></label>
+                    <br />
+                    <select class="form-select" name="pselect" id="select" aria-label="Default select example">
+                        <option value="0">Select Your Education Level</option>
+                        <option value="1">High School</option>
+                        <option value="2">2 years College</option>
+                        <option value="3">4 years College</option>
+                        <option value="4">Master </option>
+                        <option value="5">Doctoral</option>
+                    </select>
+                </div>
+                <div class="data">
+                    <label for="data" class="form-label"><strong>Reason For Contacting:</strong></label>
+                    <br />
+                    <input list="problems" name="pdatalist" id="datalist" placeholder="Type Something...">
+                    <datalist id="problems">
+                        <option value="">
+                        <option value="Starting Business.">Partner
+                        <option value="Working under your supervision.">job
+                        <option value="A Question to ask.">question
+                        <option value="Something Wrong in your Site.">site
+                        <option value="I have an Idea. ">idea
+                    </datalist>
+                </div>
+            </fieldset>
+            <fieldset id="f2">
+                <div class="check">
+                    <label><strong>What Exams Have You Entered?</strong></label><br>
+                    <input type="checkbox" name="exam[]" value="yos" id="c++">
+                    <label for="yos">YÖS</label>
+                    <br />
+                    <input type="checkbox" name="exam[]" value="yks" id="python">
+                    <label for="yks">YKS</label>
+                    <br />
+                    <input type="checkbox" name="exam[]" value="tyt" id="c#">
+                    <label for="tyt">TYT</label>
+                    <br />
+                    <input type="checkbox" name="exam[]" value="ayt" id="javascript">
+                    <label for="ayt">AYT</label>
+                    <br />
+                </div>
+                <div class="textarea">
+                    <label><strong>Your Message:</strong></label>
+                    <br />
+                    <textarea id="txtarea" name="ptxtarea" placeholder="Write Your Message Here Please..."></textarea>
+
+
+
+                </div>
+                <div class="buttons">
+                    <button type="submit" onclick="return check_valid()" name="sub1">Submit -JS Framework-</button>
+                    <br />
+                    <button type="submit"  name="sub2">Submit -Javascript-</button>
+                    <br />
+                    <button type="reset" name="clear1" data-dismiss="modal">Clear</button>
+                </div>
+
+            </fieldset>
+
+
+
+
+
+
+
+        </form>
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="footer">
+        <p class="footer-title">Copyrights @ <span>Yusuf Demir</span></p>
+
+    </footer>
+
+
+
+    <script src="js/popper.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="check.js"></script>
+    <script src="check-jquery.js"></script>
+</body>
+
+</html>

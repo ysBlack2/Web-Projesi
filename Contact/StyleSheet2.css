@@ -1,0 +1,255 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Briem+Hand:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400&display=swap');
+
+*{
+    font-family: "Briem Hand", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    padding:0;
+    margin:0;
+}
+
+
+body {
+    background-image: linear-gradient(#343a40bc 20%,#0000009b 70%), url(images/black1.webp);
+    background-size: contain;
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+#d1{
+    background-color:transparent;
+    width:fit-content;
+    height:fit-content;
+    position:absolute;
+    top:40px;
+    left:40px;
+
+}
+
+#main-word {
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+}
+#main-word h1{
+    color:white;
+}
+#main-word h1:hover{
+    color:wheat;
+    cursor:help;
+}
+#b1 {
+    width: 100px;
+    height: 50px;
+    border: 4px double;
+    border-radius: 3px 3px;
+    color: white;
+    font-size: medium;
+    background-color: transparent;
+}
+#b1:hover{
+    border:dashed;
+    background-color:#343a40d0;
+    color:wheat;
+}
+.container {
+    display: flex;
+    justify-content: space-between; /* Create space between elements */
+    align-items: center; /* Center items vertically */
+    height: 100vh;
+    gap:100px;
+}
+#d2 {
+    display:flex;
+    justify-content:left;
+    align-items:center;
+    width: 100%;
+    border-radius:30px;
+    border:dashed;
+    border-color:wheat;
+    background-color: #343a40d0;
+    padding:30px;
+    
+}
+#d2 label{
+    color:wheat;
+    font-size:20px;
+    margin:5px;
+    
+}
+
+#f1{
+    background-color:transparent;
+    float:left;
+    margin-top:0px;
+    margin-right:300px;
+}
+
+#f1 .ad input{
+    border-radius: 30px;
+    width:270px;
+    height:35px;
+    border:none;
+    outline:none;
+    background:transparent;
+    border: 2px solid wheat;
+    box-shadow: 0 0 4px #fff;
+    color:black;
+    margin:5px;
+    color:#f5c368;
+}
+#f1 .ad input::placeholder{
+    color:#f5deb3ad;
+}
+#f1 .ad input:focus {
+
+    box-shadow: 0 0 10px wheat;
+}
+
+#f1 .gen #g{
+    color:wheat;
+    font-size:18px;
+    margin:5px;
+}
+#f1 .contact input{
+    border-radius: 30px;
+    width:270px;
+    height:35px;
+    border:none;
+    outline:none;
+    background:transparent;
+    border: 2px solid wheat;
+    box-shadow: 0 0 4px #fff;
+    color:black;
+    margin:5px;
+    color:#f5c368;
+}
+#f1 .contact input::placeholder{
+    color:#f5deb3ad;
+}
+#f1 .contact input:focus {
+    box-shadow: 0 0 10px wheat;
+}
+#f1 .education select{
+    background:transparent;
+    border-radius: 30px;
+    width:270px;
+    height:35px;
+    outline:none;
+    border: 2px solid wheat;
+    box-shadow: 0 0 4px #fff;
+    color:#f5c368;
+    margin:5px;
+}
+#f1 .data input{
+    border-radius: 30px;
+    width:270px;
+    height:35px;
+    border:none;
+    outline:none;
+    background:transparent;
+    border: 2px solid wheat;
+    box-shadow: 0 0 4px #fff;
+    color:black;
+    margin:5px;
+    color:#f5c368;
+}
+#f1 .data input::placeholder{
+        color:#f5deb3ad;
+
+}
+
+#f2 {
+    background-color: transparent;
+    float: right;
+}
+
+
+#f2 .textarea #txtarea{
+    background-color:transparent;
+    width:400px;
+    height:200px;
+    flex-wrap:wrap;
+    border-radius:5px;
+    margin:5px;
+    color:#f5c368;
+    box-shadow: 0 0 4px #fff;
+
+}
+#f2 .textarea #txtarea:focus{
+  box-shadow: 0 0 10px wheat;
+
+}
+#f2 .textarea #txtarea::placeholder{
+    color:#f5deb3ad;
+}
+#f2 .buttons button{
+    margin-bottom:30px;
+    color: wheat;
+    background-color: #343a40d0;
+    border: solid;
+    border-color: wheat;
+    border-radius: 30px;
+    width:40%;
+    border-radius:20px;
+    width:50%;
+    height:35px;
+    text-align: center;
+    box-shadow: 0 0 4px #fff;
+}
+#f2 .buttons button:hover{
+    box-shadow: 0 0 10px #fff;
+}
+.footer {
+    color: #fff;
+    padding-top: 2em;
+    padding-bottom: 1em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .social-icons a {
+    font-size: 1.3em;
+    padding: 0 12px 0 0;
+}
+
+.footer-title {
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.footer-title span {
+    color: wheat;
+}
+
+@media (min-width: 467px) and (max-width: 768px) {
+    #d1 {
+        left: 10px;
+    }
+
+    .container {
+        flex-direction: column;
+        gap: 0px;
+    }
+
+   
+   
+}
+@media (min-width: 601px) and (max-width: 768px) {
+     
+}
+@media (min-width: 768px) and (max-width: 992px) {
+   
+    .container {
+        flex-direction: row; /* Stack items vertically */
+        align-items: center; /* Center items horizontally */
+    }
+
+   
+   
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+   
+   
+}
